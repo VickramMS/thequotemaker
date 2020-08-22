@@ -28,7 +28,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['thequotemaker.herokuapp.com']
 
-
 # Application definition
 
 INSTALLED_APPS = [
