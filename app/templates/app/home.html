@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="pt-2 pt-md-4 mt-5 px-2">
+    <div class="home-card rounded text-white col-md-4 mx-auto p-5 mt-5">
+        <h2 class="text-center mt-3">The Quote Maker</h2>
+        <hr class="bg-light">
+        <form action="{% url 'quote' %}" method="POST">
+            {% csrf_token %}
+            <label class="mt-2">Your Name: </label>
+            <input type="text" class="mb-2" autocomplete="off" name="name" placeholder="yourname..." required>
+            <label class="mt-1">Your Username: </label>
+            <input type="text" class="mb-2" autocomplete="off" name="username" placeholder="@username" required>
+            <label class="mt-1">Your Quote: </label>
+            <textarea name="quote" class="mb-2" name="quote" placeholder="Your quote..." required></textarea>
+            <button class="btn btn-primary mt-3 ml-auto mr-0 d-block">Create</button>
+        </form>
+    </div>
+</div>
+{% endblock content %}

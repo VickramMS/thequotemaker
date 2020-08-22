@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+
+}
+
+.body {
+    background-image: url('https://picsum.photos/seed/{{rand}}/2000/2000.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+}
+
+em {
+    font-size: small;
+}
+
+html {
+    background-image: url('https://justinstago.com/wp-content/uploads/2019/07/myths-and-mountains-and-beyond.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.home-card {
+    background-color: rgba(0, 0, 0, 0.383);
+}
+
+input[type="text"] {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.335);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 8px 12px;
+}
+
+input[type="text"]:focus {
+    background-color: rgba(255, 255, 255, 0.534);
+    outline: none;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.644);
+    padding-left: 8px;
+}
+
+textarea {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.335);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 8px 12px;
+}
+
+textarea:focus {
+    background-color: rgba(255, 255, 255, 0.534);
+    outline: none;
+}
+
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.644);
+    padding-left: 8px;
+}
+
+.fa {
+    font-size: larger;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 22px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2fcc1a;
+}
+
+input:checked+.slider2 {
+    background-color: #000000;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 17px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
